@@ -2,9 +2,11 @@ let searchbar=document.getElementById('searchbar')
 let resultnabar=document.getElementById('resultbar')
 let content=document.getElementById('content')
 
+
 searchbar.addEventListener('keyup',()=>{
     getUser(searchbar.value)
 })
+
 
 function getUser(user){
     
@@ -41,3 +43,4 @@ function getUser(user){
     }
     xhr.send()
 }
+
